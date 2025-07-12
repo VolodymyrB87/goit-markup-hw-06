@@ -287,7 +287,7 @@ img {
   margin-right: auto;
   padding-top: 72px;
   padding-bottom: 72px;
-  max-width: 320px;
+  width: 320px;
 }
 
 .section-one .container {
@@ -340,7 +340,7 @@ img {
   color: #ffffff;
   max-width: 216px;
 }
-@media scren and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .section-one {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -359,6 +359,48 @@ img {
 }
 @media (min-width: 768px) and (min-resolution: 192dpi) {
   .section-one {
-    background-image: url(../images/Dark-bg-tab-2x.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-tab-2x.jpg);
   }
+}
+@media screen and (min-width: 1158px) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office.jpg");
+  }
+}
+/*section-one*/
+/*section-two*/
+.section-two {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+.later,
+.icon-block {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+}
+.list {
+  margin-bottom: 8px;
 }
