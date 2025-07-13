@@ -1006,9 +1006,6 @@ img {
   }
 }
 @media screen and (min-width: 1158px) {
-  .modal {
-    width: 408px;
-  }
   .button-send:focus,
   .button-send:hover {
     background-color: #404bbf;
