@@ -287,7 +287,7 @@ img {
   margin-right: auto;
   padding-top: 72px;
   padding-bottom: 72px;
-  width: 320px;
+  max-width: 320px;
 }
 
 .section-one .container {
@@ -340,6 +340,15 @@ img {
   color: #ffffff;
   max-width: 216px;
 }
+@media (max-width: 768px) and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-mob-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .section-one {
     background-image: linear-gradient(
@@ -348,7 +357,7 @@ img {
       ),
       url(../images/Dark-bg-tab-1x.jpg);
     background-repeat: no-repeat;
-    width: 768px;
+    max-width: 768px;
     background-position: center;
     padding-top: 112px;
     padding-bottom: 112px;
@@ -377,14 +386,14 @@ img {
       url("../images/people-office.jpg");
     padding-top: 188px;
     padding-bottom: 188px;
-    width: 1440px;
+    max-width: 1440px;
   }
 }
 /*section-one*/
 /*section-two*/
 .section-two {
-  margin-top: 96px;
-  margin-bottom: 96px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .later,
 .icon-block {
@@ -408,11 +417,6 @@ img {
 }
 .list {
   margin-bottom: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 72px;
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
@@ -429,7 +433,7 @@ img {
   .section-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
   .strategy {
     width: calc((100% - 24px) / 2);
@@ -475,7 +479,7 @@ img {
 /*section-three*/
 .section-three {
   background-color: #f4f4fd;
-  padding-bottom: 24px;
+  padding-bottom: 96px;
   padding-top: 96px;
 }
 .list-team .employees {
@@ -496,7 +500,12 @@ img {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
-
+.list-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 72px;
+}
 .team-card {
   display: flex;
   justify-content: center;
@@ -504,7 +513,6 @@ img {
   flex-direction: column;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-bottom: 72px;
 }
 .team-card .list {
   font-weight: 500;
@@ -765,8 +773,7 @@ img {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 72px 24px;
-    padding: 0;
-    margin-left: 108px;
+    padding-left: 108px;
   }
   .footer-subscribe-text {
     margin-right: 380px;
@@ -776,7 +783,8 @@ img {
   }
   .ftr-container {
     margin-bottom: 0;
-    width: 264px;
+    max-width: 264px;
+    align-items: flex-start;
   }
   .text-social {
     margin-right: 130px;
@@ -799,6 +807,9 @@ img {
   }
   .ftr .container {
     margin-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-wrap: nowrap;
   }
   .ftr-container {
     margin-right: 120px;
