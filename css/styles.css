@@ -423,6 +423,7 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
+
 .list-text {
   font-size: 16px;
   font-weight: 500;
@@ -505,6 +506,7 @@ img {
   flex-direction: column;
   justify-content: center;
   gap: 72px;
+  align-items: center;
 }
 .team-card {
   display: flex;
@@ -786,11 +788,10 @@ img {
     max-width: 264px;
     align-items: flex-start;
   }
-  .text-social {
-    margin-right: 130px;
-  }
+
   .icons-footer {
     margin-bottom: 0;
+    align-items: start;
   }
   .footer-subscribe-form {
     display: flex;
